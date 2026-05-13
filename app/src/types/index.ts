@@ -8,12 +8,8 @@ export interface Product {
   colors: string[];
   features: string[];
   inStock: boolean;
-}
-
-export interface CartItem {
-  product: Product;
-  quantity: number;
-  selectedColor?: string;
+  affiliateUrl: string;
+  retailer: string;
 }
 
 export interface Testimonial {

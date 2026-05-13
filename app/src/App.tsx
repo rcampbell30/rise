@@ -6,8 +6,8 @@ import Features from '@/sections/Features';
 import Shop from '@/sections/Shop';
 import BuyingChecklist from '@/sections/BuyingChecklist';
 import SuitabilityGuide from '@/sections/SuitabilityGuide';
+import GuideHub from '@/sections/GuideHub';
 import FAQ from '@/sections/FAQ';
-import ComingNext from '@/sections/ComingNext';
 import CTA from '@/sections/CTA';
 import Footer from '@/sections/Footer';
 
@@ -23,8 +23,8 @@ function App() {
         <Shop />
         <BuyingChecklist />
         <SuitabilityGuide />
+        <GuideHub />
         <FAQ />
-        <ComingNext />
         <CTA />
       </main>
       <Footer />

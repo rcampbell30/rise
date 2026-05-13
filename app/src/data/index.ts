@@ -1,81 +1,62 @@
-import type { Product, Testimonial, BlogPost, Feature } from '@/types';
+import type { Product, BlogPost, Feature } from '@/types';
+
+const amazonSeatLiftSearch = 'https://www.amazon.co.uk/s?k=seat+lift+cushion+mobility';
 
 export const products: Product[] = [
   {
     id: 'rise-cushion-sand',
-    name: 'Rise Seat Lift Cushion',
-    description: 'Self-powered hydropneumatic seat assist that helps you rise effortlessly from any chair. No batteries, no installation, no compromise.',
+    name: 'Seat Lift Cushion',
+    description: 'A practical seat-assist cushion to compare when standing from armchairs, dining chairs, or sofas has started to feel difficult.',
     price: 89,
     originalPrice: 120,
     image: '/product-hero.png',
     colors: ['Sand', 'Sage', 'Slate'],
     features: [
-      'Self-powered - no batteries needed',
-      '10cm lift height assistance',
-      'Supports up to 150kg',
-      'Machine washable cover',
-      'Portable - use on any chair'
+      'Check weight capacity before buying',
+      'Look for a washable cover',
+      'Best on stable, supportive chairs',
+      'Portable around the home',
+      'Useful for families comparing options'
     ],
     inStock: true,
+    affiliateUrl: amazonSeatLiftSearch,
+    retailer: 'Amazon',
   },
   {
     id: 'rise-cushion-sage',
-    name: 'Rise Seat Lift Cushion - Sage',
-    description: 'The same independence-restoring lift cushion in a calming sage green fabric.',
+    name: 'Seat Lift Cushion - Soft Fabric Style',
+    description: 'A softer-looking option for buyers who want a mobility aid that blends into the living room rather than looking clinical.',
     price: 89,
     image: '/product-sage.jpg',
     colors: ['Sage'],
     features: [
-      'Self-powered - no batteries needed',
-      '10cm lift height assistance',
-      'Supports up to 150kg',
-      'Machine washable cover',
-      'Portable - use on any chair'
+      'Compare dimensions against your chair',
+      'Check the return policy on the retailer site',
+      'Look for non-slip base details',
+      'Consider ease of cleaning',
+      'Check whether the lift level suits the user'
     ],
     inStock: true,
+    affiliateUrl: amazonSeatLiftSearch,
+    retailer: 'Amazon',
   },
   {
     id: 'rise-cushion-slate',
-    name: 'Rise Seat Lift Cushion - Slate',
-    description: 'Elegant slate gray finish for modern homes.',
+    name: 'Seat Lift Cushion - Modern Home Style',
+    description: 'A discreet darker style for buyers comparing independence products that do not make the home feel medical.',
     price: 89,
     image: '/product-slate.jpg',
     colors: ['Slate'],
     features: [
-      'Self-powered - no batteries needed',
-      '10cm lift height assistance',
-      'Supports up to 150kg',
-      'Machine washable cover',
-      'Portable - use on any chair'
+      'Compare user reviews carefully',
+      'Check product measurements',
+      'Confirm chair compatibility',
+      'Check maximum supported weight',
+      'Ask a health professional if unsure'
     ],
     inStock: true,
-  },
-];
-
-export const testimonials: Testimonial[] = [
-  {
-    id: '1',
-    name: 'Sarah Mitchell',
-    role: 'Rise Customer',
-    content: 'Rise has given me back my confidence. I can now get up from my favorite chair without assistance. It looks beautiful in my living room - not like a medical device at all.',
-    image: '/testimonial-1.jpg',
-    rating: 5,
-  },
-  {
-    id: '2',
-    name: 'James Thompson',
-    role: 'Rise Customer',
-    content: 'The quality is exceptional. It\'s not just a product, it\'s a life changer. I was dreading having to buy one of those ugly lift chairs. Rise was the perfect solution.',
-    image: '/testimonial-2.jpg',
-    rating: 5,
-  },
-  {
-    id: '3',
-    name: 'Margaret Lewis',
-    role: 'Rise Customer',
-    content: 'Finally, a mobility solution that looks beautiful in my home. My daughter bought it for me, and I couldn\'t be happier. It\'s discreet, elegant, and works perfectly.',
-    image: '/testimonial-3.jpg',
-    rating: 5,
+    affiliateUrl: amazonSeatLiftSearch,
+    retailer: 'Amazon',
   },
 ];
 
@@ -83,7 +64,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: '1',
     title: 'Choosing the Right Mobility Aid for Your Lifestyle',
-    excerpt: 'Discover how to select mobility solutions that enhance your independence without compromising on style or comfort.',
+    excerpt: 'How to compare mobility products that support independence without compromising on dignity, comfort, or home style.',
     image: '/blog-1.jpg',
     date: 'January 10, 2026',
     category: 'Guide',
@@ -91,79 +72,61 @@ export const blogPosts: BlogPost[] = [
   {
     id: '2',
     title: 'Home Safety Tips for Independent Living',
-    excerpt: 'Practical advice for creating a safe, accessible home environment that supports your independence.',
+    excerpt: 'Practical buying checks for making a home safer and easier to move around in.',
     image: '/blog-2.jpg',
     date: 'January 5, 2026',
     category: 'Safety',
   },
   {
     id: '3',
-    title: 'The Rise Story: Our Mission',
-    excerpt: 'Learn about our journey to create beautiful, dignified mobility solutions for older adults.',
+    title: 'Seat Lift Cushions: What to Check Before Buying',
+    excerpt: 'Weight capacity, chair compatibility, cover material, returns, and safety notes to check before choosing a seat-assist cushion.',
     image: '/about-lifestyle.jpg',
     date: 'December 28, 2025',
-    category: 'Story',
+    category: 'Buying Guide',
   },
 ];
 
 export const features: Feature[] = [
   {
     id: '1',
-    title: 'Free Shipping',
-    description: 'Free delivery on all orders over £50',
-    icon: 'truck',
+    title: 'Clear Buying Guides',
+    description: 'Plain-English notes to help families compare products',
+    icon: 'search',
   },
   {
     id: '2',
-    title: '30-Day Returns',
-    description: 'Shop with confidence - easy returns',
-    icon: 'refresh',
+    title: 'Dignity First',
+    description: 'Products selected around independence, comfort, and home feel',
+    icon: 'heart',
   },
   {
     id: '3',
-    title: '3-Year Warranty',
-    description: 'Every product built to last',
+    title: 'Suitability Checks',
+    description: 'Prompts for weight limits, dimensions, safety, and returns',
     icon: 'shield',
-  },
-  {
-    id: '4',
-    title: 'Customer Support',
-    description: 'Friendly help when you need it',
-    icon: 'headphones',
-  },
-  {
-    id: '5',
-    title: 'Secure Payments',
-    description: 'Your data is always protected',
-    icon: 'lock',
-  },
-  {
-    id: '6',
-    title: 'Gift Vouchers',
-    description: 'Share independence with loved ones',
-    icon: 'gift',
   },
 ];
 
 export const faqs = [
   {
-    question: 'How does the Rise cushion work?',
-    answer: 'The Rise cushion uses a self-powered hydropneumatic mechanism. As you sit down, your weight compresses the internal spring system. When you\'re ready to stand, the stored energy gently assists you upward by up to 10cm - making it much easier to rise from seated positions.',
+    question: 'What is a seat lift cushion?',
+    answer: 'A seat lift cushion is designed to make standing up from a seated position easier. Different products work in different ways, so always check the product description, weight capacity, dimensions, and user reviews before buying.',
   },
   {
     question: 'Will it work with my chair?',
-    answer: 'Rise works with most standard armchairs, sofas, and dining chairs. The cushion is 43×43cm and works best on chairs with a flat or slightly curved seat surface. If you\'re unsure, contact our team and we\'ll help you check compatibility.',
+    answer: 'That depends on the chair and the exact cushion. Check the cushion size, the shape and stability of the chair, the seat height, and whether the product is designed for soft sofas, armchairs, or firmer dining chairs.',
   },
   {
-    question: 'Is it medical equipment?',
-    answer: 'No, Rise is a wellness product designed for comfort and convenience. It\'s not classified as medical equipment, which means no prescriptions, no insurance paperwork - just order and enjoy greater independence.',
+    question: 'Is Rise selling these products directly?',
+    answer: 'No. Rise is an affiliate-style buying guide. Product buttons may take you to retailers such as Amazon, where prices, availability, returns, and warranties are controlled by the retailer or seller.',
   },
   {
-    question: 'How much weight can it support?',
-    answer: 'The standard Rise cushion supports up to 150kg (23.5 stone). We also offer an XL version that supports up to 180kg (28 stone) for those who need extra capacity.',
+    question: 'Are the product links paid links?',
+    answer: 'Some links may be affiliate links. This means Rise may earn a commission from qualifying purchases, at no extra cost to you. Paid links are disclosed so you know when you are leaving Rise for a retailer.',
   },
   {
-    question: 'What is your return policy?',
-    answer: 'We offer a 30-day trial period. If Rise doesn\'t transform your daily life, simply return it for a full refund. We want you to be completely satisfied with your purchase.',
+    question: 'Is this medical advice?',
+    answer: 'No. Rise provides general product information and buying prompts only. If a product may affect mobility, falls risk, pain, recovery, or a medical condition, speak to a GP, occupational therapist, physiotherapist, or other qualified professional before buying.',
   },
 ];

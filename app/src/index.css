@@ -67,13 +67,26 @@
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Bodoni Moda', Georgia, serif;
-    font-weight: 400;
-    line-height: 1.1;
+    font-family: 'Mona Sans', system-ui, sans-serif;
+    font-weight: 650;
+    letter-spacing: -0.035em;
+    line-height: 1.08;
   }
 }
 
 @layer components {
+  .font-brand-serif {
+    font-family: 'Bodoni Moda', Georgia, serif;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+  }
+
+  .font-readable-heading {
+    font-family: 'Mona Sans', system-ui, sans-serif;
+    font-weight: 650;
+    letter-spacing: -0.035em;
+  }
+
   .text-brand-primary {
     color: var(--brand-primary);
   }
@@ -115,11 +128,11 @@
   }
   
   .section-subtitle {
-    @apply text-sm uppercase tracking-[0.2em] text-brand-primary font-medium;
+    @apply text-sm uppercase tracking-[0.2em] text-brand-primary font-semibold;
   }
   
   .section-title {
-    @apply text-4xl md:text-5xl lg:text-6xl text-gray-900;
+    @apply text-4xl md:text-5xl lg:text-6xl text-gray-900 font-readable-heading;
   }
   
   .container-custom {

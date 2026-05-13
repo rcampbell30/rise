@@ -69,7 +69,7 @@ export default function Shop() {
 
               <div className="p-6">
                 <div className="flex items-start justify-between gap-4 mb-3">
-                  <h3 className="text-xl text-gray-900" style={{ fontFamily: 'Bodoni Moda, serif' }}>
+                  <h3 className="text-xl font-semibold leading-tight text-gray-900">
                     {product.name}
                   </h3>
                   <div className="text-right">

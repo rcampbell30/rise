@@ -4,6 +4,7 @@ export default function Header() {
     { name: 'About', href: '#about' },
     { name: 'Why Rise', href: '#why-rise' },
     { name: 'Products', href: '#shop' },
+    { name: 'Guides', href: '#guides' },
     { name: 'FAQs', href: '#faq' },
   ];
 
@@ -32,10 +33,10 @@ export default function Header() {
           </nav>
 
           <a
-            href="#shop"
+            href="#guides"
             className="inline-flex items-center justify-center rounded-full bg-[#d4a373] px-5 py-2 text-sm font-medium text-white transition-all duration-300 hover:bg-[#bc6c25]"
           >
-            View guide
+            View guides
           </a>
         </div>
       </div>

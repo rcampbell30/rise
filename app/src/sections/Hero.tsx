@@ -13,11 +13,11 @@ export default function Hero() {
       <div className="container-custom relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center min-h-screen py-24 lg:py-0">
           <div className="max-w-xl">
-            <span className="inline-block text-sm uppercase tracking-[0.3em] text-[#d4a373] font-medium mb-6">Rise Mobility Guide</span>
-            <h1>
-              <span className="block text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-gray-900 leading-[1.1] mb-2" style={{ fontFamily: 'Bodoni Moda, serif' }}>Independence</span>
-              <span className="block text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-gray-900 leading-[1.1] mb-2" style={{ fontFamily: 'Bodoni Moda, serif' }}>Without</span>
-              <span className="block text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-[1.1]" style={{ fontFamily: 'Bodoni Moda, serif', color: '#d4a373' }}>Compromise</span>
+            <span className="inline-block text-sm uppercase tracking-[0.3em] text-[#d4a373] font-semibold mb-6">Rise Mobility Guide</span>
+            <h1 className="font-readable-heading">
+              <span className="block text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-gray-900 leading-[1.05] mb-2">Independence</span>
+              <span className="block text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-gray-900 leading-[1.05] mb-2">Without</span>
+              <span className="block text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-[1.05] text-[#d4a373]">Compromise</span>
             </h1>
             <p className="text-lg text-gray-600 mt-8 mb-10 leading-relaxed max-w-md">Compare practical mobility aids that support standing, sitting, and everyday movement at home without making the decision feel clinical, rushed, or patronising.</p>
             <div className="flex flex-wrap gap-4">
@@ -40,7 +40,7 @@ export default function Hero() {
               <img src="/product-hero.png" alt="Seat lift cushion example" className="relative w-full h-auto drop-shadow-2xl" />
               <div className="absolute -bottom-4 -left-4 bg-white rounded-2xl shadow-xl p-4">
                 <p className="text-sm text-gray-500 mb-1">Guide price from</p>
-                <p className="text-2xl font-serif text-gray-900">£<span style={{ fontFamily: 'Bodoni Moda, serif' }}>89</span></p>
+                <p className="text-2xl font-semibold text-gray-900">£89</p>
               </div>
               <div className="absolute top-10 -right-4 bg-[#d4a373] text-white rounded-full px-4 py-2 shadow-lg">
                 <span className="text-sm font-medium">Affiliate disclosed</span>
